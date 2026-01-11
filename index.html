@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Onboarding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f5f6f8;
+      padding: 30px;
+    }
+    .box {
+      max-width: 520px;
+      margin: auto;
+      background: #fff;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #2563eb;
+      color: #fff;
+      border: 0;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    .result {
+      margin-top: 20px;
+      background: #f1f5f9;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h1>🚀 Tạo shop mới (Onboarding)</h1>
+
+  <label>Tên shop</label>
+  <input id="shop_name" placeholder="Shop ABC">
+
+  <label>Email owner</label>
+  <input id="owner_email" placeholder="owner@shopabc.com">
+
+  <label>Password owner</label>
+  <input id="owner_password" type="password">
+
+  <label>MASTER KEY</label>
+  <input id="master_key" type="password">
+
+  <button onclick="onboard()">Tạo shop</button>
+
+  <div id="result" class="result" style="display:none"></div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
