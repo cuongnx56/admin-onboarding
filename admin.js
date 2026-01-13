@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbzi7JjJY5A4iY1jvQtPM13gz34mdZTJL8AEo03rQN2hs29utybUIv2CP4Zc5t44J0AH/exec";
+const API_URL = "https://sales-backend-proxy.nguyenxuancuongk56.workers.dev";
 
 async function onboard() {
   const data = {
